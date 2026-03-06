@@ -1,3 +1,25 @@
+# WSL Docker setup
+
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+```
+
+```
+sudo sh ./get-docker.sh
+```
+
+```
+sudo usermod -aG docker $USER
+```
+
+```
+newgrp docker
+```
+
+```
+docker run hello-world
+```
+
 # test setup for docker compose, kafka
 
 create directory in c drive, c:\training
