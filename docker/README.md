@@ -26,3 +26,20 @@ docker compose up
 ```
 
 Use Ctrl + C to stop it
+
+
+## Update hosts file to map DNS
+
+Open CMD in Admin mode, type cmd on start, right click,  run as Administrator
+
+```
+notepad C:\Windows\System32\drivers\etc\hosts
+```
+
+paste this one line inside hosts file, do not modify  other settings
+
+```
+127.0.0.1 broker
+```
+
+
