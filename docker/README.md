@@ -65,3 +65,18 @@ paste this one line inside hosts file, do not modify  other settings
 ```
 
 
+# Docker bash
+
+Open Ubuntu in WSL
+
+
+```
+cd /mnt/c/training
+```
+
+
+```
+docker compose exec  broker bash
+```
+
+
