@@ -79,4 +79,11 @@ cd /mnt/c/training
 docker compose exec  broker bash
 ```
 
+```
+ls /var/lib/kafka/data
+```
+
+list topic-partitions
+
+
 
