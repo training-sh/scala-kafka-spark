@@ -52,6 +52,21 @@ services:
     volumes:
       - kafka-data2:/var/lib/kafka/data
       - ./secret:/secret:ro
+
+  schema-registry:
+    image: confluentinc/cp-schema-registry:${CP_TAG:-6.2.0}
+    container_name: cp-schema-registry
+    hostname: schema-registry
+    restart: unless-stopped
+    depends_on:
+      - broker
+    networks: [kafkaspark-net]
+    ports:
+      - "8081:8081"
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: PLAINTEXT://broker:9092
     
 networks:
   kafkaspark-net: 
@@ -61,4 +76,5 @@ volumes:
   zk-data2:
   zk-txn-logs2:
   kafka-data2:
+
  
