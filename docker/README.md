@@ -1,3 +1,12 @@
+# Minio
+
+http://localhost:9001 
+
+username: minio
+
+password minio12345
+
+
 # WSL Docker setup
 
 ```
