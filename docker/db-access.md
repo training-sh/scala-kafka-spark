@@ -2,7 +2,7 @@
 # Postgresql
 
 ```
-docker exec -it postgres-db bash
+docker exec -it postgres bash
 ```
 
 ```
