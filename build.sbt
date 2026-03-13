@@ -33,6 +33,7 @@ lazy val root = (project in file("."))
       "org.apache.kafka" % "kafka-clients" % kafkaVersion,
       "com.fasterxml.jackson.core" % "jackson-databind" % "2.17.0",
       "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.17.0",
+      "com.fasterxml.jackson.datatype" % "jackson-datatype-jsr310" % "2.15.2",
 
       //FIXME: Investigate
      // "org.scala-lang.modules" %% "scala-collection-compat" % "2.1.6",
@@ -55,6 +56,8 @@ lazy val root = (project in file("."))
       "org.apache.spark" %% "spark-sql" % sparkVersion,
 
       "org.apache.spark" %% "spark-sql-kafka-0-10" % sparkVersion,
+
+
       "org.apache.hadoop" % "hadoop-aws" % hadoopVersion,
       "com.amazonaws" % "aws-java-sdk-bundle" % awsSdkVersion,
 
