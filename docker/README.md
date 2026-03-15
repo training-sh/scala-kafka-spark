@@ -68,15 +68,11 @@ notepad C:\Windows\System32\drivers\etc\hosts
 ```
 
 paste this one line inside hosts file, do not modify  other settings
-
-```
-127.0.0.1 broker
-```
-
+ 
 paste 
 
 ```
-127.0.0.1 schema-registry
+
 127.0.0.1 broker
 127.0.0.1 broker2
 127.0.0.1 broker3
@@ -85,7 +81,10 @@ paste
 127.0.0.1 minio
 127.0.0.1 spark-master
 127.0.0.1 postgres
-127.0.0.1 mysql
+127.0.0.1 MySQL
+127.0.0.1 mongodb
+
+127.0.0.1 hive-metastore
 ```
 
 # Docker bash
